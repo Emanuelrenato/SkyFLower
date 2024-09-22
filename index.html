@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YFlowers</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            /* Aplicamos el degradado sobre la imagen local */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('./img/fondo.png') no-repeat center center;
+            background-size: cover; /* Para cubrir toda la pantalla */
+        }
+
+        h1, h2 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 8vw;
+            animation: fadeInOut 3s infinite; 
+        }
+
+        h2 {
+            font-size: 4vw;
+            margin-top: 20px;
+            animation: pulse 2s infinite; 
+        }
+
+        button {
+            font-size: 3vw;
+            padding: 15px 30px;
+            margin-top: 30px;
+            border: none;
+            margin-left: 200px;
+            background-color: #ff3366;
+            color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            alert('Esto es con mucho cariño');
+            alert('Espero te guste');
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <h1>🩵Celeste🩵(●'◡'●)</h1>
+        <h2>Tengo un regalo para ti✍(◔◡◔)</h2>
+        <button onclick="window.location.href='rosas.html'">Ver regalo 👀</button>
+    </div>
+</body>
+</html>
